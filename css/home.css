@@ -1,0 +1,210 @@
+/* seleciona todos os elementos da página */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-family: GodofWar;    
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+   /* width */
+  ::-webkit-scrollbar {
+    width: 9px;
+    background: #1C1C1C;
+}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #97191d;
+    border-radius: 5px;
+}
+  body {
+    background-color: #1C1C1C;
+  }
+  @font-face {
+    font-family: GodofWar;
+    src: url("../fonts/GODOFWAR.woff");
+  }
+/*----------------------------- NAVBAR --------------------------------*/
+  .navbar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+  }
+  .containerNav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerImg {
+    width: 40vh;
+  }
+  .ulNavbar {
+    display: flex;
+    z-index: 10;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  .ulNavbar li {
+    margin-left: 40px;
+    color: #97191d;
+    font-size: 1.4rem;
+  }
+  .ulNavbar li:hover {
+    transition: 0.5s;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+/*----------------------------- VIDEO --------------------------------*/
+  .videoBg {
+    width: 100%;
+  }
+  /*----------------------------- SETA --------------------------------*/
+  .setaDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .seta-animation {
+    animation: seta 1s infinite;
+    width: 50px;
+    position: absolute;
+    z-index: 5;
+  }
+  /* Animação da seta, o keyframe seta o movimento inicial e final da animação */
+  @keyframes seta {
+    0% {
+      bottom: 10%;
+    }
+    50% {
+      bottom: 5%;
+    }
+    100% {
+      bottom: 10%;
+    }
+  }
+  /*----------------------------- SINOPSE --------------------------------*/
+  .containerSinopse {
+    height: 85vh;
+    width: 80%;
+    padding-top: 35px;
+    margin: 0 auto;
+  }
+  .sTitulo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #97191d;
+  }
+  .sinopseText {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sText {
+    width: 100%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .sText p {
+    margin: 30px;
+  }
+/*----------------------------- PERSONAGENS --------------------------------*/
+  .containerPersonagens {
+    height: 395vh;
+    width: 90%;
+    padding-top: 35px;
+    margin: 0 auto;
+  }
+  .pTitulo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #97191d;
+  }
+  .personagensText {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .pText {
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .pText h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #92959e;
+  }
+  .imgPersonagens {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /*----------------------------- Curiosidades --------------------------------*/
+  .containerCuriosidade {
+    height: 150vh;
+    width: 80%;
+    padding-top: 35px;
+    margin: 0 auto;
+  }
+  .cTitulo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #97191d;
+  }
+  .curiosidadeText {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .cText {
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 10px;    
+  }
+  .cText h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #92959e;
+  }
+  .imgCuriosidade {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }

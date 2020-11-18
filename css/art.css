@@ -1,0 +1,93 @@
+/* seleciona todos os elementos da página */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-family: GodofWar;    
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+   /* width */
+  ::-webkit-scrollbar {
+    width: 9px;
+    background: #1C1C1C;
+}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #97191d;
+    border-radius: 5px;
+}
+  body {
+    background-color: #1C1C1C;
+  }
+  @font-face {
+    font-family: GodofWar;
+    src: url("../fonts/GODOFWAR.woff");
+  }
+  /*----------------------------- NAVBAR --------------------------------*/
+  .navbar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  .containerNav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerImg {
+    width: 40vh;
+    cursor: pointer;
+  }
+  .ulNavbar {
+    display: flex;
+    z-index: 10;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  .ulNavbar li {
+    margin-left: 40px;
+    color: #97191d;
+    font-size: 1.5rem;
+  }
+  .ulNavbar li:hover {
+    transition: 0.5s;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  /*----------------------------- IMAGENS --------------------------------*/
+  .containerImg {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+  }
+  .fileira {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+  }
+  .img {
+    height: 100%;
+    width: 20vw;
+    opacity: 0.2;
+  }
+  .img img {
+    height: 100%;
+    width: 100%;
+  }
+  .img:hover {
+    opacity: 1;
+    transition: 00.5s;
+  }

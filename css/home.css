@@ -95,7 +95,6 @@
   .containerSinopse {
     height: 85vh;
     width: 80%;
-    padding-top: 35px;
     margin: 0 auto;
   }
   .sTitulo h1 {
@@ -115,7 +114,7 @@
   .sText {
     width: 100%;
     font-size: 1.1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.1px;
     text-align: center;
   }
   .sText p {
@@ -145,7 +144,7 @@
   .pText {
     width: 55%;
     font-size: 1.1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.1px;
     text-align: center;
     margin: 0 10px;
   }
@@ -166,7 +165,7 @@
   }
   /*----------------------------- Curiosidades --------------------------------*/
   .containerCuriosidade {
-    height: 150vh;
+    height: 70vh;
     width: 80%;
     padding-top: 35px;
     margin: 0 auto;
@@ -181,15 +180,14 @@
     color: #97191d;
   }
   .curiosidadeText {
-    height: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
   .cText {
-    width: 55%;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    width: 100%;
+    font-size: 0.8rem;
+    letter-spacing: 0.1px;
     text-align: center;
     margin: 0 10px;    
   }

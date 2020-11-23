@@ -13,6 +13,10 @@
     font-family: GodofWar;
     src: url("../fonts/GODOFWAR.woff");
   }
+  @font-face {
+    font-family: GillSans;
+    src: url(../fonts/gill-sans.woff);
+  }
   /*----------------------------- NAVBAR --------------------------------*/
   .navbar {
     height: 10vh;
@@ -80,7 +84,8 @@
   }
  /*----------------------------- MODAL --------------------------------*/
   .modal-container {
-    height: 100vh;
+    background-color: ;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -104,16 +109,24 @@
     position: relative;
     overflow: hidden;
   }
+  .modal-body p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: GillSans;
+    font-size: 1.2rem;
+    text-align: center;
+  }
   #modalImg {
     height: 100%;
     width: 100%;
   }
   .fechar {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     position: fixed;
-    top: 65px;
-    right: 33%;
+    top: 50px;
+    right: 23%;
     background: #97191d;
     font-size: 1.3rem;
     color: black;

@@ -17,7 +17,7 @@
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #97191d;
-    border-radius: 5px;
+    border-radius: 1vh;
 }
   body {
     background-color: #1C1C1C;
@@ -25,6 +25,10 @@
   @font-face {
     font-family: GodofWar;
     src: url("../fonts/GODOFWAR.woff");
+  }
+  @font-face {
+    font-family: GillSans;
+    src: url(../fonts/gill-sans.woff);
   }
 /*----------------------------- NAVBAR --------------------------------*/
   .navbar {
@@ -93,7 +97,7 @@
   }
   /*----------------------------- SINOPSE --------------------------------*/
   .containerSinopse {
-    height: 85vh;
+    height: 75vh;
     width: 80%;
     margin: 0 auto;
   }
@@ -119,12 +123,12 @@
   }
   .sText p {
     margin: 30px;
+    font-family: GillSans;
   }
 /*----------------------------- PERSONAGENS --------------------------------*/
   .containerPersonagens {
-    height: 395vh;
+    height: 390vh;
     width: 90%;
-    padding-top: 35px;
     margin: 0 auto;
   }
   .pTitulo h1 {
@@ -134,6 +138,7 @@
     font-size: 3.5rem;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-bottom: 4vh;
     color: #97191d;
   }
   .personagensText {
@@ -145,8 +150,10 @@
     width: 55%;
     font-size: 1.1rem;
     letter-spacing: 0.1px;
-    text-align: center;
     margin: 0 10px;
+  }
+  .pText p {
+    font-family: GillSans;
   }
   .pText h2 {
     display: flex;
@@ -165,9 +172,8 @@
   }
   /*----------------------------- Curiosidades --------------------------------*/
   .containerCuriosidade {
-    height: 70vh;
+    height: 50vh;
     width: 80%;
-    padding-top: 35px;
     margin: 0 auto;
   }
   .cTitulo h1 {
@@ -177,6 +183,7 @@
     font-size: 3.5rem;
     font-weight: bold;
     letter-spacing: 3px;
+    margin-bottom: 4vh;
     color: #97191d;
   }
   .curiosidadeText {
@@ -186,11 +193,13 @@
   }
   .cText {
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.1px;
-    text-align: center;
-    margin: 0 10px;    
+    margin: 0 5px;
   }
+  .cText p {
+      font-family: GillSans;
+    }
   .cText h2 {
     display: flex;
     justify-content: center;
@@ -200,9 +209,13 @@
     letter-spacing: 3px;
     color: #92959e;
   }
-  .imgCuriosidade {
-    width: 40%;
+   /*----------------------------- End --------------------------------*/
+   .footer-end {
+    height: 2.5vh;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-  }
+    background-color: #97191d;
+   }

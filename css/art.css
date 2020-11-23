@@ -6,19 +6,6 @@
     color: white;
     font-family: GodofWar;    
   }
-  html {
-    scroll-behavior: smooth;
-  }
-   /* width */
-  ::-webkit-scrollbar {
-    width: 9px;
-    background: #1C1C1C;
-}
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #97191d;
-    border-radius: 5px;
-}
   body {
     background-color: #1C1C1C;
   }
@@ -64,7 +51,7 @@
     font-size: 1.6rem;
     cursor: pointer;
   }
-  /*----------------------------- IMAGENS --------------------------------*/
+ /*----------------------------- IMAGENS --------------------------------*/
   .containerImg {
     height: 100vh;
     width: 100%;
@@ -90,4 +77,46 @@
   .img:hover {
     opacity: 1;
     transition: 00.5s;
+  }
+ /*----------------------------- MODAL --------------------------------*/
+  .modal-container {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-container.ativo {
+    display: flex;
+  }
+  .ativo,
+  .modal {
+    animation: modal 0.3s forwards;
+  }
+  .modal {
+    width: 30%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    position: relative;
+    overflow: hidden;
+  }
+  #modalImg {
+    height: 100%;
+    width: 100%;
+  }
+  .fechar {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 65px;
+    right: 33%;
+    background: #97191d;
+    font-size: 1.3rem;
+    color: black;
+    font-family: GodofWar;
+    cursor: pointer;
   }

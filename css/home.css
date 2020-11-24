@@ -3,25 +3,29 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    color: white;
-    font-family: GodofWar;    
+    font-family: GodofWar;
+    color: mintcream;
   }
   html {
     scroll-behavior: smooth;
   }
+  body {
+    background-image: url("../img/GOW_white.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
    /* width */
   ::-webkit-scrollbar {
     width: 9px;
-    background: #1C1C1C;
+    background-color: #1C1C1C;
 }
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #97191d;
     border-radius: 1vh;
 }
-  body {
-    background-color: #1C1C1C;
-  }
   @font-face {
     font-family: GodofWar;
     src: url("../fonts/GODOFWAR.woff");
@@ -62,7 +66,7 @@
   }
   .ulNavbar li:hover {
     transition: 0.5s;
-    color: white;
+    color: mintcream;
     font-size: 1.5rem;
     cursor: pointer;
   }
@@ -79,7 +83,7 @@
   }
   .seta-animation {
     animation: seta 1s infinite;
-    width: 50px;
+    width: 40px;
     position: absolute;
     z-index: 5;
   }
@@ -97,8 +101,8 @@
   }
   /*----------------------------- SINOPSE --------------------------------*/
   .containerSinopse {
-    height: 75vh;
-    width: 80%;
+    height: 65vh;
+    width: 90%;
     margin: 0 auto;
   }
   .sTitulo h1 {
@@ -117,7 +121,7 @@
   }
   .sText {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1px;
     text-align: center;
   }
@@ -127,7 +131,7 @@
   }
 /*----------------------------- PERSONAGENS --------------------------------*/
   .containerPersonagens {
-    height: 390vh;
+    height: 305vh;
     width: 90%;
     margin: 0 auto;
   }
@@ -147,10 +151,11 @@
     align-items: center;
   }
   .pText {
-    width: 55%;
-    font-size: 1.1rem;
+    width: 50%;
+    font-size: 1.4rem;
     letter-spacing: 0.1px;
     margin: 0 10px;
+    text-align: center;
   }
   .pText p {
     font-family: GillSans;
@@ -159,10 +164,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 3px;
-    color: #92959e;
+    color: #97191d;
   }
   .imgPersonagens {
     width: 40%;
@@ -170,10 +175,13 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  .imgPersonagens img {
+    border-radius: 10px;
+  }
   /*----------------------------- Curiosidades --------------------------------*/
   .containerCuriosidade {
-    height: 50vh;
-    width: 80%;
+    height: 55vh;
+    width: 90%;
     margin: 0 auto;
   }
   .cTitulo h1 {
@@ -189,12 +197,10 @@
   .curiosidadeText {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
   }
   .cText {
     width: 100%;
-    font-size: 1rem;
-    letter-spacing: 0.1px;
+    font-size: 1.4rem;
     margin: 0 5px;
   }
   .cText p {
@@ -204,14 +210,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 3px;
-    color: #92959e;
+    color: #97191d;
   }
    /*----------------------------- End --------------------------------*/
    .footer-end {
-    height: 2.5vh;
+    height: 2vh;
     font-size: 1rem;
     letter-spacing: 0.1px;
     display: flex;

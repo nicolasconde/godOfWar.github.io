@@ -1,0 +1,49 @@
+/* seleciona todos os elementos da página */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: GodofWar;
+  }
+  body {
+    background-image: url("../img/GOW_kratosAndAtreus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  @font-face {
+    font-family: GodofWar;
+    src: url("../fonts/GODOFWAR.woff");
+  }
+  @font-face {
+    font-family: GillSans;
+    src: url(../fonts/gill-sans.woff);
+  }
+  /*----------------------------- NAVBAR --------------------------------*/
+  .navbar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  .containerNav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerImg {
+    width: 40vh;
+    cursor: pointer;
+  }
+  .ulNavbar {
+    display: flex;
+    z-index: 10;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }

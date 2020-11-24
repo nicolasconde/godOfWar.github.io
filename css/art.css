@@ -81,10 +81,10 @@
   .img:hover {
     opacity: 1;
     transition: 00.5s;
+    cursor: pointer;
   }
  /*----------------------------- MODAL --------------------------------*/
   .modal-container {
-    background-color: ;
     height: 100%;
     width: 100%;
     position: fixed;

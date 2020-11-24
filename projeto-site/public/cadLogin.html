@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./css/cadLogin.css">
+    <title>God of War - </title>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="container">
+        <div class="navbar">
+            <div class="containerNav">
+                <img onclick="icon()" class="headerImg" src="./img/GodOfWar_Logo.png" />
+            </div>
+        </div>
+        <!--Fim navbar-->
+        <!-- Começo do Login -->
+        <div class="containerLogin">
+            <div class="login">
+                <div class="login">
+                    <h2>LOGIN</h2>
+                    <form id="form_login" method="post" onsubmit="return entrar()">
+                        <p>E-mail</p>
+                        <input name="login" placeholder="Insira seu e-mail">
+                        <p>Senha</p>
+                        <input name="senha" type="password" placeholder="Insira sua senha">
+                        <button type="submit">ENTRAR</button>
+                    </form>
+                </div>
+                <div class="cadastro">
+                    <h2>CADASTRO</h2>
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                        <p>Nome</p>
+                        <input name="nome">
+                        <p>E-mail</p>
+                        <input name="login">
+                        <p>Senha</p>
+                        <input name="senha" type="password">
+                        <p>Confirmar senha</p>
+                        <input type="password">
+                        <button type="submit">CADASTRAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Final do Login -->
+</body>
+
+</html>
+<script>
+
+    function icon() {
+        window.location.href = "index.html";
+    }
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'fanArt.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                // window.location.href='jogos.html';
+                alert('Faça login!')
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

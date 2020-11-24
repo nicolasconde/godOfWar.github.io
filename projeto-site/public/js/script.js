@@ -12,7 +12,7 @@ function scrollCuriosidades() {
     scroll.scrollIntoView();
 }
 function pagFanArt() {
-    window.location.href = "fanArt.html";
+    window.location.href = "cadLogin.html";
 }
 function icon() {
     window.location.href = "index.html";

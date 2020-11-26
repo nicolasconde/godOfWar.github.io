@@ -7,34 +7,37 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./css/cadLogin.css">
-    <title>God of War - </title>
+    <title>God of War - Login/Cadastro</title>
 </head>
 
 <body>
-    <!--navbar-->
     <div class="container">
+        <!--navbar-->
         <div class="navbar">
             <div class="containerNav">
                 <img onclick="icon()" class="headerImg" src="./img/GodOfWar_Logo.png" />
             </div>
         </div>
         <!--Fim navbar-->
-        <!-- Começo do Login -->
-        <div class="containerLogin">
-            <div class="login">
-                <div class="login">
-                    <h2>LOGIN</h2>
+        <!-- Começo do Login/Cadastro -->
+        <div class="containerCadLogin">
+            <div class="cadLogin">
+                <div id="motion" class="motion">
+                    <button id="btnEfeito" class="btnEfeito" onclick="divEfeito()">Entrar</button>
+                </div>
+                <div class="divisao">
                     <form id="form_login" method="post" onsubmit="return entrar()">
-                        <p>E-mail</p>
+                        <h2>LOGIN</h2>
+                        <p>Email</p>
                         <input name="login" placeholder="Insira seu e-mail">
                         <p>Senha</p>
                         <input name="senha" type="password" placeholder="Insira sua senha">
-                        <button type="submit">ENTRAR</button>
+                        <button class="cadLoginButton" type="submit">ENTRAR</button>
                     </form>
                 </div>
-                <div class="cadastro">
-                    <h2>CADASTRO</h2>
+                <div class="divisao">
                     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                        <h2>CADASTRO</h2>
                         <p>Nome</p>
                         <input name="nome">
                         <p>E-mail</p>
@@ -43,17 +46,18 @@
                         <input name="senha" type="password">
                         <p>Confirmar senha</p>
                         <input type="password">
-                        <button type="submit">CADASTRAR</button>
+                        <button class="cadLoginButton" type="submit">CADASTRAR</button>
                     </form>
                 </div>
             </div>
         </div>
-        <!-- Final do Login -->
+    </div>
+    <!-- Final do Login/Cadastro -->
 </body>
 
 </html>
+<script src="./js/script.js"></script>
 <script>
-
     function icon() {
         window.location.href = "index.html";
     }

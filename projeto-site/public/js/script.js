@@ -22,6 +22,20 @@ function scrollSinopse() {
     scroll.scrollIntoView();
 }
 // FIM SCROLL
+// EFEITO PAGINA LOGIN/CADASTRO
+var effect = true;
+
+function divEfeito() {
+    document.getElementById("motion").classList.toggle("efeito");
+    if (effect) {
+        document.getElementById("btnEfeito").innerHTML = "Cadastrar"
+        effect = !effect
+    } else {
+        document.getElementById("btnEfeito").innerHTML = "Entrar"
+        effect = !effect
+    }
+}
+// FIM EFEITO PAGINA LOGIN/CADASTRO
 // MODAL1
 const botaoAbrir1 = document.querySelector("#abrir1");
 const botaoFechar1 = document.querySelector('#fechar1');

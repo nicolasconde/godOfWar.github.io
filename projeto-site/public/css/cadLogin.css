@@ -71,15 +71,42 @@
   border-radius: 10px;
 }
 .divisao h2 {
-  font-size: 2rem;
-}
-.divisao p {
-  font-family: GillSans;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 10%;
+  -webkit-text-stroke: 1px #97191d;
 }
 .divisao form {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.divisao input {
+  font-family: GillSans;
+  text-align: center;
+  background-color: black;
+  border: 3px solid #97191d;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding: 5;
+  width: 10vw;
+  height: 2vh;
+}
+.divisao button {
+  width: 15vw;
+  height: 5vh;
+  background-color: black;
+  border: 3px solid #97191d;
+  color: #97191d;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.divisao button:hover {
+  color: mintcream;
+  font-size: 1.25rem;
 }
 .btnEfeito {
   color: #97191d;
@@ -87,18 +114,23 @@
   border: transparent;
   cursor: pointer;
   transition: 0.8s;
-  font-size: 1rem;
+  font-size: 2.5rem;
+  border: #97191d;
 }
 .btnEfeito:hover {
   color: mintcream;
-  font-size: 1.2rem;
+  font-size: 2.6rem;
   cursor: pointer;
 }
 .motion {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-image: url("../img/fundo_GOW.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   width: 50%;
   height: 100%;
   position: absolute;

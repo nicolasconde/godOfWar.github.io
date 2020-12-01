@@ -54,8 +54,6 @@
   background-image: url("../img/fundo_GOW.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   height: 55vh;
   width: 50vw;
   display: flex;
@@ -126,17 +124,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/fundo_GOW.png");
+  background-image: url("../img/fundoGOW_left.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   width: 50%;
   height: 100%;
   position: absolute;
-  transition: transform 1.5s;
+  transition: transform 2s;
   border-radius: 10px;
 }
 .efeito {
-  transform: translateX(100%);
+  transform: translateX(99.85%);
+  transition: transform 2s;
+  background-image: url("../img/fundoGOW_right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
